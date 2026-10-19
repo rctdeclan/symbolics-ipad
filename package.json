@@ -22,7 +22,10 @@
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test tests/core.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "npm run build && npm test && npm run smoke"
   },
   "browserslist": {
     "production": [

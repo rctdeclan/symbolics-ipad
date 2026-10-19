@@ -5,11 +5,21 @@ Symbolics is a 2.5D SVG game experiment. v3 keeps the v2 dragon formula/debug wo
 ## Install
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
 `node_modules` is intentionally not included. `package.json` and `package-lock.json` describe the install. v3 adds no new npm dependencies.
+
+Use the Node version in `.nvmrc` (`nvm use` if nvm is installed).
+Run `npm run check` for the production build, core tests, and headless HTTP
+smoke checks. There is no configured TypeScript or lint command. These checks
+do not replace browser or iPadOS/Safari validation.
+
+For Mac/Cloud Git synchronization, commands and platform limitations, see
+[AGENTS.md](AGENTS.md). For the current implementation and known gaps, read
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). The longer
+[v3 design document](SYMBOLICS_V3_ARCHITECTURE.md) also includes future APIs.
 
 ## Spatial model
 
@@ -33,7 +43,7 @@ A `Body` should render its graphics through a `Spatial`. Each Body can therefore
 
 ## Compound Classes
 
-`src/compound/compound.js` provides the TGO-style structural builder:
+`src/compound/compound.jsx` provides the TGO-style structural builder:
 
 ```js
 const Dragon = compose(BaseDragon)()

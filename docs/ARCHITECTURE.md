@@ -232,6 +232,12 @@ owner (or uses a supplied non-function part value), and assigns body definitions
 Instances expose `getPart(name)` and `render(props)`. The builder does not
 automatically subscribe React to part mutations or turn the class into a component.
 
+The use of a Base class describes the current builder implementation, not a
+required design principle for future architecture. Prioritize composition
+through Parts and orchestration through the enclosing Compound Class. Preserve
+the current builder unless a specific feature requires changing it; this
+clarification does not call for removing Base or refactoring the implementation.
+
 Parts encapsulate behavior and context for one concern; the enclosing Compound
 Class composes capabilities in `.body(...)`. For new substantive features,
 first identify the concern boundary, add a Part when it owns meaningful behavior
@@ -268,6 +274,9 @@ context; gamma is defined inside beta, invokes alpha, and is the reusable recipe
 It provides need-to-know composition, not an interchangeable generic callback,
 event bus, dependency-injection system or conventional inheritance hierarchy.
 The primitive alone accepts any beta; enforcing Part ownership is a design rule.
+Its generic implementation does not authorize replacing Part-owned Compound
+Functions with ordinary callbacks. Preserve the distinction between the helper's
+accepted inputs and the stricter architectural contract.
 
 This minimal TypeScript illustration uses the same closure construction as
 `compoundFunction(beta)(alpha)`. It proposes no new builder API. `DepthPart`

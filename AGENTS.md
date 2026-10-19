@@ -24,11 +24,16 @@ Treat source/configuration as evidence of current functionality.
   abstractions. Identify conflicts before changing architectural foundations;
   report discrepancies instead of silently changing code or inventing an API.
 - New concerns belong in independent Parts. Compose their capabilities through
-  narrow contracts; Parts must not depend on unrelated Parts. Keep math and
-  graphics separate. Compound Functions mean inline alpha at a Part's beta
+  narrow contracts, orchestrated by the enclosing Compound Class. The builder's
+  Base class is an implementation detail, not a required design principle.
+  Preserve the implementation unless a specific feature requires changing it.
+  Parts must not depend on unrelated Parts. Keep math and graphics separate.
+  Compound Functions mean inline alpha at a Part's beta
   method call, beta's Part closure returning gamma, and gamma invoking alpha.
   Do not replace this mechanism with generic callbacks, event buses, dependency
-  injection, or conventional inheritance.
+  injection, or conventional inheritance. The implemented helper is generic;
+  its existence does not authorize ordinary callbacks in place of this stricter
+  Part-owned design contract.
 - Keep positioning generic: Spatial/SpatialGroup describe poses/relationships;
   graphical Bodies consume them. Do not couple Bodies to positioning lines.
   SpatialPath is a design requirement with no current implementation/API;

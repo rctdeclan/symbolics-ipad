@@ -19,8 +19,12 @@ The resulting class extends Base, forwards constructor arguments, constructs
 function-valued Parts with `new Part(this)`, stores them in `this.parts`, then
 assigns body definitions. `getPart(name)` retrieves a Part; `render(props)`
 creates the configured React view with `compound={this}` or returns null.
-The existing Base extension is an implementation detail to preserve, not an
-invitation to replace composition with a hierarchy of concern subclasses.
+The existing Base extension is an implementation detail, not a required design
+principle. Future architecture prioritizes composition through Parts and
+orchestration through the enclosing Compound Class. Preserve the current
+implementation unless a specific feature requires changing it. This decision
+neither requires Base inheritance in future designs nor calls for removing it
+from the current builder.
 
 ## Consequences and guidance
 

@@ -21,6 +21,9 @@ closure construction and continuation relationship are defining constraints.
 `src/compound/compound.jsx` exports
 `compoundFunction = (beta) => (alpha) => beta(alpha)`.
 This primitive neither creates Parts nor enforces beta ownership/alpha invocation.
+Its generic implementation does not authorize replacing Part-owned Compound
+Functions with ordinary callbacks; accepted helper inputs are not the full
+architectural contract.
 A Part method can implement the construction directly; when passing a method
 through the helper, use a wrapper that preserves the Part receiver.
 

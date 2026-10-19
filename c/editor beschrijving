@@ -1,0 +1,92 @@
+
+
+
+deduction
+
+ast
+
+overzicht
+
+inkijk
+
+hoe maak je overzicht?
+
+kunnen zien van bovenliggende relaties
+
+Zien welke conclusies je uit iets kan trekken
+
+een vraag beantwoorden
+
+gegeven een aspect, wat kan je daar uit concluderen?
+
+syntax
+
+geen imperative
+
+/declarative
+
+representatie in display
+
+/calculatie niet
+
+argumenten structuur
+
+niet ex nihilo. basis van voertaal staat vast
+
+
+de basis is niet iets vast zetten en daaruit functioneren.
+
+Het is een interpreter. geen compiler.
+
+-----
+ast editor
+functies: conclusies trekken uit relaties
+kijkhoeken: Functies opbouwen op basis van ast van andere functies
+
+editor:
+- headers (typografie)
+- iconen
+- monospace font met mooie brackets 
+- navigatie,,,
+
+markeringen (kleur van achtergrond tekst)
+tabs voor children
+dotted achtergrond
+
+paper stelt vragen om te ondersteunen in het typen van de functies.
+
+inzicht krijgen wat nog niet getypt is. Wat nog verder moet worden gedefinieert.
+
+de use-case is op een ander abstractieniveau. (e.g. embedded, gui, server)
+
+paper handelt de praktische zaken (e.g. onvoltooide formuleringen)
+
+# Dingen die ik altijd al wilde maken
+
+Een manier om bovenliggende relaties te duiden. Overzichtelijk. 
+
+Met taal kan je conclusies formuleren.
+
+Binnen welke context wil je een relatie weten?
+Je wilt iets omvatten. Dat is te doen door meerdere relaties er over te weten. Dit weten zorgt voor een ervaring van omvatting. Zo kan je een abstracte bundel van conclusies inkaarten.
+
+Is een hiërarchie genoeg om een overzicht te geven van deze relaties?
+
+
+Normaal leg je in taal uit wat de relaties zijn, en krijg je daarmee een overzicht.
+
+Kunnen we een gestructureerde representatie vinden?
+
+Welke middelen visueel kunnen de relaties duiden? Het moet inzichtelijk zijn
+
+Is het handig om meerdere vragen op te stellen om de relaties te belichten?
+	
+De ervaring van een beeld in beeldvorming voldoet altijd.
+
+
+
+
+Een wiskundige formule is niet inzichtelijk.
+
+Een abstracte relatievorming
+

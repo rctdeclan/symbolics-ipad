@@ -1,0 +1,19 @@
+node_modules/
+dist/
+build/
+coverage/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+.clj-kondo/.cache/
+.lsp/.cache/
+*.o
+*.a
+*.dSYM/
+a.out
+
+# Standalone C repositories are maintained separately.
+c/42Projects/
+c/ray-tracing-in-one-weekend-mlx/

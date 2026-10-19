@@ -1,0 +1,215 @@
+
+
+een collectie van objecten
+
+allemaal onderdeel van modules
+
+een module kan je addresseren
+
+alles return dmv een functie. 
+
+een module kan een functie bevatten. die functie word gegeven. 
+
+
+types zijn allerlei vormen van implementatie leveren
+
+het is een groep builders in een hierarchie
+
+- [ ] F : Module
+    - [ ] Functie : 
+    - [ ] Lambda : <F.Functie<F.Arguments, F.Return>
+    - [ ] Foo
+    - [ ] Bar
+    - [ ] Return
+
+e.g. fibonacci : Lambda
+
+- [x] A : Module
+    - [x] createFirst: <F.Functie<F.Foo>> [functie die een Foo returnt]
+        - [ ] [het bouwen van createfirst. het bestaat uit een Foo met een random getal ] 
+    - [ ] createBetter: [functie die een bar returner]
+    - [ ] 
+    - [ ] makeFunction
+
+(a)=> {
+ return 1;
+}
+
+elk object is een functie die dat object verwezenlijkt.
+
+een functie is iets dat specifiek een berekening kan doen over hoe iets moet zijn
+
+
+- [ ] (basis levering)
+    - [ ] (builder die returnt een compositie)
+
+alle onderliggende takken bouwen iets op naar de bovenliggende. van branch naar root. 
+
+syntax moet ruimte maken voor allerlei cryptische vormen van beschrijvings implementatie. die cryptische vormen worden omvat door een beschrijvende string. 
+
+de collectie van functies bouwt de module. 
+
+〰️
+
+alles is een object. alles is addresseerbaar
+
+alles is een functie. alles returnt iets. 
+
+een functie composeerd
+
+Hoe definieer je een decleratieve compositie? d.m.v een jsonesque struct.
+
+
+
+
+functies hebben een context. functies kunnen onderdeel zijn van een module.
+
+een module is een object
+
+alle objecten hebben een type
+
+die types beschrijven wat het object implementeert. 
+
+lambda returnt altijd een object
+
+geen curly braces maar indents
+
+closures
+
+〰️
+
+
+
+- [ ] B: Module
+	- [ ] Fibonacci: <F.Functie
+
+- [ ] Instances: Module //een module met functies die instanties beschrijven
+	- [ ] first : B.Fibonacci 
+
+- [ ] main : F.Functie
+	- [ ] I : int [I is 3]
+	- [ ] e : F.Call 
+		- [ ] Instances.First
+
+- [ ] Types : Module
+	- [ ] 
+
+- [ ] main : F.Functie
+	- [ ] I : int [I is 3]
+	- [ ] //zet int waarde 3
+	- [ ] //call. Maak 
+	- [ ] call : F.Call
+		- [ ] f : B.Fibonacci
+			- [ ] [waarde is Instances.first]
+		- [ ] a : Argument
+			- [ ] [waarde is int I]
+		- [ ] r : Return
+			- [ ] [waarde is instances.first(i)]
+	- [ ] call2 : F.Call //print de waarde van r
+		- [ ] f: F.Print
+			- [ ] [waarde is call.r]
+		- [ ] 
+
+
+
+	- [ ] e : F.Call 
+		- [ ] Instances.First
+
+(defclass book ()
+  ((title :reader book-title
+          :initarg :title)
+   (author :reader book-author
+           :initarg :author))
+  (:documentation "Describes a book."))
+
+(make-instance 'book
+               :title "ANSI Common Lisp"
+               :author "Paul Graham")
+
+
+
+
+
+
+〰️
+
+Let render : Lambda = () => {
+	let e: Element = Element()
+	return e;
+}
+
+Let render : Lambda = {arg: int = 1, return: Element = null, imp: ID = {
+
+
+}}
+
+Let instance : {f: Foo, b: Bar} = {f=1,b=2}
+
+Let render : Lambda = { (someArg: int): Element
+
+
+(Deffunc render: Function
+	arg : Int
+	return: Element
+
+Type definition composition: Struct defining the type and its values.
+
+ID = implementation declaration
+
+
+〰️
+
+
+
+🔥Wat kunnen we bewaren voor de simpele boven op c taal?
+
+- [x] Collectie van functies
+
+- [x] Modules
+
+- [x] Functies die iets componeren (deels door Builders)
+- [x] Functies die iets representeren.
+- [x] Functies die worden beschreven
+
+elk object word gecomponeerd door interne builders.
+elk object is een functie die dat object verwezenlijkt.
+
+Alles wat binnen de haakjes staat beschrijft het type. Die hoeft niet in een header te staan. 
+
+De struct definieert het type. Een type is een collectie van een struct. Die type geef je een naam. Hoe doen we typedef op die struct?
+
+Die struct is het resultaat van de functie
+
+}
+
+
+Let G = ():G.Module  => 
+	Let render = ({args}):G.Element => {
+		element : G.Element = G.Element();
+		return element;
+
+    let Element = ({arg}):G.Element =>
+        let f : G.Element = (arg.a,arg.b) =>
+            return G.Element(arg)
+        return f;
+
+    let Module = ({args}):G.Module =>
+        return null;
+
+
+    let Type = ({args}):G.Type =>
+		let fields = [];
+
+        return({
+			G.Struct({
+				fields
+			})
+		});
+
+	return G.Module({render, Element}); //define the module by returning a composition. lambda return
+}
+
+Wat zou dit makkelijker maken?
+overzicht.
+
+

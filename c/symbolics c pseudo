@@ -1,0 +1,45 @@
+main
+
+creer mlx_init
+creer window
+
+maak lijn die afbuigt op basis van een array van richtingen
+e.g. [3,0,-3,0,2,0,-2,0,1,2,1,0,-1,-2,-1,0]
+
+lijn bestaat uit array van lineto.
+
+
+
+
+in de loop
+
+    calculeer pixels
+    maak image
+
+
+
+svg graphics:
+struct met lineto commando's.
+
+beter:
+
+per path element:
+
+transform: translatie en rotatie. 
+
+array met vectors x y z relatief aan origin van element
+
+map met arrays van koppelingen (lineto)
+
+array met detail informatie gekoppeld aan map
+(kleur lijn, lijndikte, fill)
+
+per group element:
+
+transform: translate en rotatie
+children: element[]
+
+
+
+
+
